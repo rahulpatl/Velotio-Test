@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		580F536429256876002064B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580F536329256876002064B8 /* AppDelegate.swift */; };
+		580F536829256876002064B8 /* CharactersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580F536729256876002064B8 /* CharactersVC.swift */; };
+		580F536E29256876002064B8 /* Velotio_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 580F536C29256876002064B8 /* Velotio_test.xcdatamodeld */; };
+		580F537029256877002064B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580F536F29256877002064B8 /* Assets.xcassets */; };
+		580F537329256877002064B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 580F537129256877002064B8 /* LaunchScreen.storyboard */; };
+		580F537E29256878002064B8 /* Velotio_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580F537D29256878002064B8 /* Velotio_testTests.swift */; };
+		580F538829256878002064B8 /* Velotio_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580F538729256878002064B8 /* Velotio_testUITests.swift */; };
+		580F538A29256878002064B8 /* Velotio_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580F538929256878002064B8 /* Velotio_testUITestsLaunchTests.swift */; };
+		58A8DAFA2927849A005D5FC8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A8DAF92927849A005D5FC8 /* Network.swift */; };
+		58A8DAFC292784E5005D5FC8 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A8DAFB292784E5005D5FC8 /* Services.swift */; };
+		58A8DAFE29278C3A005D5FC8 /* APIFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A8DAFD29278C3A005D5FC8 /* APIFailure.swift */; };
+		58A8DB0029278DF7005D5FC8 /* URLRequestComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A8DAFF29278DF7005D5FC8 /* URLRequestComponent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		580F537A29256878002064B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580F535829256876002064B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580F535F29256876002064B8;
+			remoteInfo = "Velotio test";
+		};
+		580F538429256878002064B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580F535829256876002064B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580F535F29256876002064B8;
+			remoteInfo = "Velotio test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		580F536029256876002064B8 /* Velotio test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Velotio test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		580F536329256876002064B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		580F536729256876002064B8 /* CharactersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVC.swift; sourceTree = "<group>"; };
+		580F536D29256876002064B8 /* Velotio_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Velotio_test.xcdatamodel; sourceTree = "<group>"; };
+		580F536F29256877002064B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		580F537229256877002064B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		580F537429256877002064B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580F537929256878002064B8 /* Velotio testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Velotio testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		580F537D29256878002064B8 /* Velotio_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velotio_testTests.swift; sourceTree = "<group>"; };
+		580F538329256878002064B8 /* Velotio testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Velotio testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		580F538729256878002064B8 /* Velotio_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velotio_testUITests.swift; sourceTree = "<group>"; };
+		580F538929256878002064B8 /* Velotio_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Velotio_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		58A8DAF92927849A005D5FC8 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		58A8DAFB292784E5005D5FC8 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		58A8DAFD29278C3A005D5FC8 /* APIFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFailure.swift; sourceTree = "<group>"; };
+		58A8DAFF29278DF7005D5FC8 /* URLRequestComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestComponent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		580F535D29256876002064B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580F537629256878002064B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580F538029256878002064B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580F535729256876002064B8 = {
+			isa = PBXGroup;
+			children = (
+				580F536229256876002064B8 /* Velotio test */,
+				580F537C29256878002064B8 /* Velotio testTests */,
+				580F538629256878002064B8 /* Velotio testUITests */,
+				580F536129256876002064B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		580F536129256876002064B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				580F536029256876002064B8 /* Velotio test.app */,
+				580F537929256878002064B8 /* Velotio testTests.xctest */,
+				580F538329256878002064B8 /* Velotio testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		580F536229256876002064B8 /* Velotio test */ = {
+			isa = PBXGroup;
+			children = (
+				58A8DAF829278484005D5FC8 /* Network */,
+				580F536329256876002064B8 /* AppDelegate.swift */,
+				580F536729256876002064B8 /* CharactersVC.swift */,
+				580F536F29256877002064B8 /* Assets.xcassets */,
+				580F537129256877002064B8 /* LaunchScreen.storyboard */,
+				580F537429256877002064B8 /* Info.plist */,
+				580F536C29256876002064B8 /* Velotio_test.xcdatamodeld */,
+			);
+			path = "Velotio test";
+			sourceTree = "<group>";
+		};
+		580F537C29256878002064B8 /* Velotio testTests */ = {
+			isa = PBXGroup;
+			children = (
+				580F537D29256878002064B8 /* Velotio_testTests.swift */,
+			);
+			path = "Velotio testTests";
+			sourceTree = "<group>";
+		};
+		580F538629256878002064B8 /* Velotio testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				580F538729256878002064B8 /* Velotio_testUITests.swift */,
+				580F538929256878002064B8 /* Velotio_testUITestsLaunchTests.swift */,
+			);
+			path = "Velotio testUITests";
+			sourceTree = "<group>";
+		};
+		58A8DAF829278484005D5FC8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				58A8DAF92927849A005D5FC8 /* Network.swift */,
+				58A8DAFB292784E5005D5FC8 /* Services.swift */,
+				58A8DAFD29278C3A005D5FC8 /* APIFailure.swift */,
+				58A8DAFF29278DF7005D5FC8 /* URLRequestComponent.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		580F535F29256876002064B8 /* Velotio test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580F538D29256878002064B8 /* Build configuration list for PBXNativeTarget "Velotio test" */;
+			buildPhases = (
+				580F535C29256876002064B8 /* Sources */,
+				580F535D29256876002064B8 /* Frameworks */,
+				580F535E29256876002064B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Velotio test";
+			productName = "Velotio test";
+			productReference = 580F536029256876002064B8 /* Velotio test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		580F537829256878002064B8 /* Velotio testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580F539029256878002064B8 /* Build configuration list for PBXNativeTarget "Velotio testTests" */;
+			buildPhases = (
+				580F537529256878002064B8 /* Sources */,
+				580F537629256878002064B8 /* Frameworks */,
+				580F537729256878002064B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580F537B29256878002064B8 /* PBXTargetDependency */,
+			);
+			name = "Velotio testTests";
+			productName = "Velotio testTests";
+			productReference = 580F537929256878002064B8 /* Velotio testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		580F538229256878002064B8 /* Velotio testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580F539329256878002064B8 /* Build configuration list for PBXNativeTarget "Velotio testUITests" */;
+			buildPhases = (
+				580F537F29256878002064B8 /* Sources */,
+				580F538029256878002064B8 /* Frameworks */,
+				580F538129256878002064B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580F538529256878002064B8 /* PBXTargetDependency */,
+			);
+			name = "Velotio testUITests";
+			productName = "Velotio testUITests";
+			productReference = 580F538329256878002064B8 /* Velotio testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		580F535829256876002064B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					580F535F29256876002064B8 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					580F537829256878002064B8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 580F535F29256876002064B8;
+					};
+					580F538229256878002064B8 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 580F535F29256876002064B8;
+					};
+				};
+			};
+			buildConfigurationList = 580F535B29256876002064B8 /* Build configuration list for PBXProject "Velotio test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 580F535729256876002064B8;
+			productRefGroup = 580F536129256876002064B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				580F535F29256876002064B8 /* Velotio test */,
+				580F537829256878002064B8 /* Velotio testTests */,
+				580F538229256878002064B8 /* Velotio testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		580F535E29256876002064B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580F537329256877002064B8 /* LaunchScreen.storyboard in Resources */,
+				580F537029256877002064B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580F537729256878002064B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580F538129256878002064B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		580F535C29256876002064B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58A8DAFC292784E5005D5FC8 /* Services.swift in Sources */,
+				580F536829256876002064B8 /* CharactersVC.swift in Sources */,
+				580F536429256876002064B8 /* AppDelegate.swift in Sources */,
+				58A8DAFA2927849A005D5FC8 /* Network.swift in Sources */,
+				58A8DB0029278DF7005D5FC8 /* URLRequestComponent.swift in Sources */,
+				580F536E29256876002064B8 /* Velotio_test.xcdatamodeld in Sources */,
+				58A8DAFE29278C3A005D5FC8 /* APIFailure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580F537529256878002064B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580F537E29256878002064B8 /* Velotio_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580F537F29256878002064B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580F538829256878002064B8 /* Velotio_testUITests.swift in Sources */,
+				580F538A29256878002064B8 /* Velotio_testUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		580F537B29256878002064B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580F535F29256876002064B8 /* Velotio test */;
+			targetProxy = 580F537A29256878002064B8 /* PBXContainerItemProxy */;
+		};
+		580F538529256878002064B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580F535F29256876002064B8 /* Velotio test */;
+			targetProxy = 580F538429256878002064B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		580F537129256877002064B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				580F537229256877002064B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		580F538B29256878002064B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		580F538C29256878002064B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		580F538E29256878002064B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Velotio test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rahul.Velotio-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		580F538F29256878002064B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Velotio test/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rahul.Velotio-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		580F539129256878002064B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rahul.Velotio-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Velotio test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Velotio test";
+			};
+			name = Debug;
+		};
+		580F539229256878002064B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rahul.Velotio-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Velotio test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Velotio test";
+			};
+			name = Release;
+		};
+		580F539429256878002064B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rahul.Velotio-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Velotio test";
+			};
+			name = Debug;
+		};
+		580F539529256878002064B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rahul.Velotio-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Velotio test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		580F535B29256876002064B8 /* Build configuration list for PBXProject "Velotio test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580F538B29256878002064B8 /* Debug */,
+				580F538C29256878002064B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580F538D29256878002064B8 /* Build configuration list for PBXNativeTarget "Velotio test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580F538E29256878002064B8 /* Debug */,
+				580F538F29256878002064B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580F539029256878002064B8 /* Build configuration list for PBXNativeTarget "Velotio testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580F539129256878002064B8 /* Debug */,
+				580F539229256878002064B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580F539329256878002064B8 /* Build configuration list for PBXNativeTarget "Velotio testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580F539429256878002064B8 /* Debug */,
+				580F539529256878002064B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		580F536C29256876002064B8 /* Velotio_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				580F536D29256876002064B8 /* Velotio_test.xcdatamodel */,
+			);
+			currentVersion = 580F536D29256876002064B8 /* Velotio_test.xcdatamodel */;
+			path = Velotio_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 580F535829256876002064B8 /* Project object */;
+}
