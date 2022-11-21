@@ -10,6 +10,7 @@ import Foundation
 protocol CharactersViewOutput {
     func search(character name: String)
     func makeBookmark(character: CharacterDetailsStorage)
+    func showDetails(character: CharacterDetailsStorage)
 }
 
 protocol CharactersViewInput: AnyObject {
@@ -27,7 +28,7 @@ protocol CharactersInteractorOutput: AnyObject {
 }
 
 protocol CharactersRouterInput {
-    func showBookmarks()
+    func showCharacter(id: Int)
 }
 
 protocol CharactersBuilderProtocol {

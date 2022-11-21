@@ -35,4 +35,7 @@ final class CharacterPresenter: CharactersViewOutput, CharactersInteractorOutput
         }
     }
     
+    func showDetails(character: CharacterDetailsStorage) {
+        router?.showCharacter(id: Int(character.id))
+    }
 }

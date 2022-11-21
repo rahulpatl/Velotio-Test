@@ -20,6 +20,7 @@ class CharactersBuilder: CharactersBuilderProtocol {
         presenter.interactor = interactor
         presenter.router = router
         interactor.output = presenter
+        router.view = vc
         
         return vc
     }

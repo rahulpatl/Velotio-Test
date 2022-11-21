@@ -8,6 +8,7 @@
 import Foundation
 enum APIServices {
     case getCharacter(startsWith: String, hashKey: String, ts: String)
+    case characterDetails(id: Int, hashKey: String, timeStamp: String)
 }
 
 //MARK: NetworkAPI Constants
@@ -31,6 +32,13 @@ extension APIServices {
             "hash": hashKey,
             "ts": ts
           ]
+          
+      case let .characterDetails(_, hashKey, timeStamp):
+          return [
+            "apikey": APIConstants.PublicKey,
+            "hash": hashKey,
+            "ts": timeStamp
+          ]
       }
   }
   
@@ -42,6 +50,8 @@ extension APIServices {
     switch self {
     case .getCharacter:
       return "/v1/public/characters"
+    case .characterDetails(let id, _, _):
+        return "/v1/public/characters/\(id)"
     }
   }
   

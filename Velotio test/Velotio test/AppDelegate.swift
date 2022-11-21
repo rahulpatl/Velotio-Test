@@ -28,7 +28,8 @@ var window: UIWindow?
     }
     
     private func applyNavigationTheme() {
-        UINavigationBar.appearance().backgroundColor = UIColor.systemGray
+        UINavigationBar.appearance().backgroundColor = UIColor.red
+        UINavigationBar.appearance().tintColor = .white
     }
 
     // MARK: - Core Data stack

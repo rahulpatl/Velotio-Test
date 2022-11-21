@@ -121,6 +121,10 @@ extension CharactersVC: UICollectionViewDelegateFlowLayout, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         self.view.endEditing(true)
+        guard let character = viewModel?.characterAt(index: indexPath.item) else {
+            return
+        }
+        output?.showDetails(character: character)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
