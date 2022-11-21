@@ -22,16 +22,20 @@ final class Velotio_testTests: XCTestCase {
             obj.imageURL = "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/53176aa9df48d\(i).jpg"
             list.append(obj)
         }
+        viewModel.updateSearch(text: "Ant")
         viewModel.update(list: list)
+        XCTAssertEqual(viewModel.charactersCount, 5)
         let obj3 = viewModel.characterAt(index: 3)
         XCTAssertNotNil(obj3)
         XCTAssertEqual(obj3!.id, 4)
         XCTAssertFalse(obj3!.isBookmarked)
         XCTAssertEqual(obj3!.imageURL, "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/53176aa9df48d4.jpg")
+        XCTAssertEqual(viewModel.srarchText, "Ant")
     }
 
     func testPerformanceExample() throws {
         viewModel.update(list: [])
+        viewModel.updateSearch(text: "")
     }
 
 }
