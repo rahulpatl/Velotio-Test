@@ -6,7 +6,7 @@
 //
 
 import Foundation
-final class CharactersViewModel {
+class CharactersViewModel {
     private var list: [CharacterDetailsStorage] = []
     private var searchString = ""
     var srarchText: String {
