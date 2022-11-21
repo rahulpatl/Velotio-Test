@@ -7,16 +7,29 @@
 
 import Foundation
 enum APIServices {
-  case getCharacter(startsWith: String)
+    case getCharacter(startsWith: String, hashKey: String, ts: String)
+}
+
+//MARK: NetworkAPI Constants
+enum APIConstants {
+    static let marvelBaseURL = "https://gateway.marvel.com"
+    static let APIKey = "2b332f8162515d107d333135ddfb6b306cc566f9"
+    static let PublicKey = "2c23c86a20aafe7b7102f599f25c220e"
+}
+
+enum HTTPMethod: String {
+    case get = "GET"
 }
 
 extension APIServices {
   var parameters: [String : Any] {
       switch self {
-      case let .getCharacter(startsWith):
+      case let .getCharacter(startsWith, hashKey, ts):
           return [
             "nameStartsWith": startsWith,
-            "apikey": APIConstants.APIKey
+            "apikey": APIConstants.PublicKey,
+            "hash": hashKey,
+            "ts": ts
           ]
       }
   }
@@ -28,7 +41,7 @@ extension APIServices {
   var path: String {
     switch self {
     case .getCharacter:
-      return "443/v1/public/characters"
+      return "/v1/public/characters"
     }
   }
   
@@ -38,18 +51,7 @@ extension APIServices {
   
   var headers: [String: String]? {
       return [
-          "Accept": "application/json",
-          "Content-Type": "application/json"
+          "Connection": "keep-alive"
       ]
   }
-}
-
-//MARK: NetworkAPI Constants
-enum APIConstants {
-    static let marvelBaseURL = "https://gateway.marvel.com"
-    static let APIKey = "2c23c86a20aafe7b7102f599f25c220e"
-}
-
-enum HTTPMethod: String {
-    case get = "GET"
 }

@@ -3,4 +3,86 @@
    uuid = "4075790F-D5EB-4BB6-9D50-52C4B13CDCFC"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D686A46E-754A-4B66-9413-883E146696FA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Velotio test/Modules/Home/View/CharactersVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB290723-26D7-4B24-9AD4-A9C89626809D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Velotio test/Modules/Home/View/CharactersVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5B6AA80-D4CE-42FA-9CE4-8B8810D85104"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Velotio test/Modules/Home/Interactor/CharactersInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchDBData(text:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5B6AA80-D4CE-42FA-9CE4-8B8810D85104 - a0569edd681273e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Velotio_test.CharactersInteracter.fetchDBData(text: Swift.String) -&gt; ()"
+                  moduleName = "Velotio test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulpatil/Documents/GitHub/Velotio-Test/Velotio%20test/Velotio%20test/Modules/Home/Interactor/CharactersInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "F5B6AA80-D4CE-42FA-9CE4-8B8810D85104 - a0569edd681273e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Velotio_test.CharactersInteracter.fetchDBData(text: Swift.String) -&gt; ()"
+                  moduleName = "Velotio test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rahulpatil/Documents/GitHub/Velotio-Test/Velotio%20test/Velotio%20test/Modules/Home/Interactor/CharactersInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

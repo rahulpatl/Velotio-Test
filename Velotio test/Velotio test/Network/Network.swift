@@ -10,7 +10,7 @@ import UIKit
 protocol NetworkServices {
   @discardableResult func request<T: Decodable>(_ endPoint: APIServices, objectType: T.Type, completion: @escaping (Result<T, APIFailure>) -> Void) -> URLSessionDataTask
   
-//  func request(_ endPoint: String, completion: @escaping (Result<UIImage?, APIFailure>) -> Void)
+  func request(_ endPoint: String, completion: @escaping (Result<UIImage?, APIFailure>) -> Void)
 }
 
 class Network: NetworkServices, URLComponentRequest {
@@ -19,9 +19,6 @@ class Network: NetworkServices, URLComponentRequest {
   static var defaultSession: URLSession = {
       let configuration = URLSessionConfiguration.default
       configuration.timeoutIntervalForRequest = 20
-      if #available(iOS 11.0, *) {
-          configuration.waitsForConnectivity = true
-      }
       return URLSession(configuration: configuration)
   }()
 
@@ -30,19 +27,25 @@ class Network: NetworkServices, URLComponentRequest {
   }
   
   func request<T>(_ _request: APIServices, objectType: T.Type, completion: @escaping (Result<T, APIFailure>) -> Void) -> URLSessionDataTask where T : Decodable {
-    let request = try? makeURLRequest(for: _request)
-    
-    let dataTask = session?.dataTask(with: request!) { (data, response, error) in
-      if let error = error as NSError?, error.domain == NSURLErrorDomain {
-        completion(Result.failure(APIFailure.invalidRequestURL(error as! URL)))
-          return
+      var request: URLRequest
+      do {
+          request = try makeURLRequest(for: _request)
+      } catch {
+          completion(.failure(error as! APIFailure))
+          return URLSessionDataTask()
       }
-      
+    
+    let dataTask = session?.dataTask(with: request) { (data, response, error) in
+        if let error = error as NSError?, error.domain == NSURLErrorDomain {
+            completion(Result.failure(APIFailure.invalidRequestURL(request.url!)))
+            return
+        }
+
       guard let data = data else {
           completion(Result.failure(APIFailure.emptyData))
           return
       }
-      
+
       do {
           let jsonObject = try JSONDecoder().decode(objectType, from: data)
           completion(Result.success(jsonObject))
@@ -55,22 +58,19 @@ class Network: NetworkServices, URLComponentRequest {
   }
   
   
-//  func request(_ endPoint: String, completion: @escaping (Result<UIImage?, NetworkFailure>) -> Void) {
-//    guard let url = URL(string: APIConstants.movieImagesBaseURL + endPoint) else {
-//      return
-//    }
-//
-//    let task = session?.dataTask(with: url) { (data, response, error) in
-//      if let imageData = data, let image = UIImage(data: imageData) {
-//        completion(Result.success(image))
-//      } else {
-//        completion(Result.failure(NetworkFailure.emptyData))
-//      }
-//    }
-//
-//    task?.resume()
-//  }
-  
+  func request(_ endPoint: String, completion: @escaping (Result<UIImage?, APIFailure>) -> Void) {
+    guard let url = URL(string: endPoint) else {
+      return
+    }
 
-//  task.resume()
+    let task = session?.dataTask(with: url) { (data, response, error) in
+      if let imageData = data, let image = UIImage(data: imageData) {
+          completion(Result.success(image))
+      } else {
+        completion(Result.failure(APIFailure.emptyData))
+      }
+    }
+
+    task?.resume()
+  }
 }

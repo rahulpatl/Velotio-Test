@@ -14,12 +14,21 @@ var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let initialViewController = CharactersVC()
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = initialViewController
-        self.window?.makeKeyAndVisible()
+        setInitialViewController()
+        applyNavigationTheme()
         return true
+    }
+    
+    private func setInitialViewController() {
+        let initialViewController = CharactersBuilder().getCharacter()
+        let navigationController = UINavigationController(rootViewController: initialViewController)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+    }
+    
+    private func applyNavigationTheme() {
+        UINavigationBar.appearance().backgroundColor = UIColor.systemGray
     }
 
     // MARK: - Core Data stack
